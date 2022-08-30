@@ -32,6 +32,25 @@ tombol.addEventListener "click", ->
 	dispatchEvent new Event "storage"
 ```
 
+Atau bisa juga kita modif localStorage:
+
+```coffeescript
+# modif
+realStorage = localStorage.setItem
+localStorage.setItem = (key, value) ->
+	realStorage key, value
+	dispatchEvent new Event "storage"
+
+# getter
+addEventListener "storage", ->
+	console.log localStorage.data
+
+# setter
+tombol = document.querySelector "button"
+tombol.addEventListener "click", ->
+	localStorage.setItem "data", Math.random()
+```
+
 ### Aplikasi Android
 
 ## Tanpa Iklan
