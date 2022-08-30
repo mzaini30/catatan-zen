@@ -21,8 +21,15 @@ Tapi, tentu saja kita nggak meninggalkan JavaScript sama sekali. Makanya, aku ad
 Lalu, untuk komunikasi antar dua app Petite Vue di halaman yang sama, kita bisa menggunakan event storage:
 
 ```coffeescript
-nama = "Zen"
-console.log nama
+# getter
+addEventListener "storage", ->
+	console.log localStorage.data
+
+# setter
+tombol = document.querySelector "button"
+tombol.addEventListener "click", ->
+	localStorage.data = Math.random()
+	dispatchEvent new Event "storage"
 ```
 
 ### Aplikasi Android
