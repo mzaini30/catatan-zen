@@ -53,6 +53,8 @@ tombol.addEventListener "click", ->
 
 ### Aplikasi Android
 
+Kalau untuk aplikasi Android, kita pakai Admob. Di situ, nggak terlalu diperhatikan kode HTML-nya, maupun porsinya dengan JavaScript. Kalau di web untuk browser kan harus lebih banyak HTML daripada 
+
 ## Tanpa Iklan
 
 ### Extension Chrome
