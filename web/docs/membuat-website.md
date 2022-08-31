@@ -53,7 +53,9 @@ tombol.addEventListener "click", ->
 
 ### Aplikasi Android
 
-Kalau untuk aplikasi Android, kita pakai Admob. Di situ, nggak terlalu diperhatikan kode HTML-nya, maupun porsinya dengan JavaScript. Kalau di web untuk browser kan harus lebih banyak HTML daripada 
+Kalau untuk aplikasi Android, kita pakai Admob. Di situ, nggak terlalu diperhatikan kode HTML-nya, maupun porsinya dengan JavaScript. Kalau di web untuk browser kan harus lebih banyak HTML daripada JavaScript-nya. Tapi, kalau bentuk aplikasi Android, karena Admob itu nggak dipengaruhi sama elemen HTML, nggak masalah kita full pakai framework JavaScript. Yang penting, dia pakai routing hash.
+
+Nah, untuk convert dari bentuk web ke bentuk aplikasi Android, aku pakai [andro](https://github.com/mzaini30/andro).
 
 ## Tanpa Iklan
 
