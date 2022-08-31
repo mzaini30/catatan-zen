@@ -1,1 +1,0 @@
-# Teknik Dagang Crypto
